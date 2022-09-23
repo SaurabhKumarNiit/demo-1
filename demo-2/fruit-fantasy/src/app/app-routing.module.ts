@@ -15,6 +15,7 @@ const routes: Routes = [{
 {
     path: "fruit-detail/:id",
     component: FruitDetailComponent,
+    canActivate: [AuthGuard],
     canDeactivate: [CanDeactivateGuard]
 },
 {

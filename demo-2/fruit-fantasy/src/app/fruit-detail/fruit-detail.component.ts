@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } from '@angular/router';
-import { Observable } from 'rxjs';
 import { Fruit } from '../models/fruit';
-import { CanDeactivateGuard } from '../services/can-deactivate.guard';
 import { FruitService } from '../services/fruit.service';
 import { RouteService } from '../services/route.service';
 

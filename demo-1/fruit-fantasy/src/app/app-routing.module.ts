@@ -13,7 +13,8 @@ const routes: Routes = [{
 },
 {
     path: "fruit-detail/:id",
-    component: FruitDetailComponent
+    component: FruitDetailComponent,
+    canActivate: [AuthGuard]
 },
 {
     path: "login",

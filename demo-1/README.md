@@ -76,7 +76,7 @@ Refer to the following guidelines for modifying the solution code:
                 }      
             }
         ```
-4. Add `CanActivate` route guard to route with path `home` in the `app-routing.module.ts` file 
+4. Add `CanActivate` route guard to route with path `home` and `fruit-detail/:id` in the `app-routing.module.ts` file 
     ```ts
         const routes: Routes = [{
             path: "home",
@@ -89,7 +89,8 @@ Refer to the following guidelines for modifying the solution code:
         },
         {
             path: "login",
-            component: LoginComponent
+            component: LoginComponent,
+            canActivate: [AuthGuard]
         },
         {
             path: "",
