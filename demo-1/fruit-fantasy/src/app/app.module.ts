@@ -24,6 +24,7 @@ import { NavigationPanelComponent } from './navigation-panel/navigation-panel.co
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { AppRoutingModule } from './app-routing.module';
 import { FruitDetailComponent } from './fruit-detail/fruit-detail.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -59,7 +60,8 @@ import { LoginComponent } from './login/login.component';
     LayoutModule,
     MatSidenavModule,
     MatListModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

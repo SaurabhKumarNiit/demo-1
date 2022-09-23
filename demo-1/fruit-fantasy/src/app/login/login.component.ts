@@ -8,9 +8,9 @@ import { RouteService } from '../services/route.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  vendorCode: string = "";
   @Output() 
   loggedIn: EventEmitter<boolean> = new EventEmitter<boolean>(false);
-  vendorCode: string = "";
   
   constructor(private authService: AuthService,
     private fruitRouterService: RouteService ) { }

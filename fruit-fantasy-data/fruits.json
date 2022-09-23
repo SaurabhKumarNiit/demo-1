@@ -4,12 +4,12 @@
       "id": 1,
       "name": "apple",
       "price": "4",
-      "unit": "pound"
+      "unit": "piece"
     },
     {
       "id": 2,
       "name": "apricot",
-      "price": "8",
+      "price": "7",
       "unit": "piece"
     },
     {
