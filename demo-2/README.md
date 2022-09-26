@@ -9,7 +9,10 @@ Refer to the following guidelines for modifying the solution code:
         - Modify the class definition by replacing `CanDeactivateComponent` with `FruitDetailComponent`
         - The type of `component` parameter in `canDeactivate()` method should be changed to `FruitDetailComponent`
     2. The `canDeactivate()` method should check whether `component` contains definition of `canDeactivate` method
-        - if true, the `canDeactivate()` method must be called and its value must be returned.
+        - if true, the `canDeactivate()` method of `FruitDetailComponent` must be called and its value must be returned.
+        ```ts
+            return component.canDeactivate ? component.canDeactivate() : true;
+        ```
         - if false, value `true` must be returned
     3. Add `CanDeactivateGuard` to `FruitDetail` component in route configuration
         ```ts
