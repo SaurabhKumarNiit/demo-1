@@ -102,7 +102,7 @@ Refer to the following guidelines for modifying the solution code:
             component: NotFoundComponent
         }]
     ```
-5. Adding login / logout links
+5. Add login / logout links
     1. In `Header` component add Input property `loggedIn` of type boolean with initial value set to `false`.
         ```ts
             @Input()
